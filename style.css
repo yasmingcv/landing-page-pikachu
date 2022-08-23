@@ -4,18 +4,26 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #F5CF06;
+    --secondary-color: #8E4106;
+    --white: #FFFFFF;
+    --spacedefault: 70px;
+}
 body{
     height: 100vh;
     background-color: #F5CF06;
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
-    padding-right: 70px;
+    padding-top: var(--spacedefault);
+    padding-right: var(--spacedefault);
     padding-bottom: 24px;
-    padding-left: 70px;
+    padding-left: var(--spacedefault);
 }
 header{
-    background-color: aqua;}
+    background-color: aqua;
+    height: 48px;
+}
 main{
     background-color: black;
     flex-grow: 1;
