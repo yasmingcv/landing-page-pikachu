@@ -33,9 +33,64 @@ header{
     color: var(--secondary-color);
 }
 main{
-    background-color: black;
     flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.pikachu-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -35%);
+    z-index: 1;
+}
+.title{
+    position: relative;
+    grid-column: 1/-1;
+    place-self: end center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title__text{
+    font-size: 20vw;
+    color: var(--white);
+}
+.title__transparent{
+    position: absolute;
+    position: absolute;
+    font-size: 27vw;
+    z-index: -1;
+    transform: translateY(-40%);
+    color: #FFFFFF55;
+}
+.description{
+    grid-column: 1/7;
+    place-self: center start;
+    color: var(--secondary-color);
+    z-index: 1;
+}
+.description__title{
+    font-size: 4rem;
+}
+.description__text{
+    font-size: 1.2rem;
+}
+.action{
+    grid-column: 7/-1;
+    place-self: center end;
+    width: 411px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 3rem;
+    text-decoration: none;
 }
 footer{
-    background-color: crimson;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--secondary-color);
 }
