@@ -122,3 +122,20 @@ footer{
         place-self: end center;
     }
 }
+
+@media (max-width: 640px) {
+    .pikachu-image{
+        width: 90vw;
+    }
+    .description__title{
+        font-size: 10vw;
+    }
+    .description__text{
+        display: none;
+    }
+    .action{
+        width: 100%;
+    }
+
+    
+}
